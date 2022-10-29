@@ -8,6 +8,8 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 /**
+ * purpose : model table students
+ *
  * Entity annotation from Data JPA
  * Initialize database "students" to mysql
  **/

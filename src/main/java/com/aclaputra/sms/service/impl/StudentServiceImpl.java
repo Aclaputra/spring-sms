@@ -8,19 +8,22 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class StudentServiceImpl implements StudentService {
-
-  private StudentRepository studentRepository;
+  /**
+   * purpose get studentRepository
+   **/
+  private StudentRepository repository;
 
   /**
-   * constructor with parameter
+   * constructor with parameter dari 
    **/
   public StudentServiceImpl(StudentRepository studentRepository) {
     super();
-    this.studentRepository = studentRepository;
+    this.repository = studentRepository;
   }
 
+  /**
+   *  override getAllStudents pada StudentService
+   **/
   @Override
-  public List<Student> getAllStudents() {
-    return studentRepository.findAll();
-  }
+  public List<Student> getAllStudents() {return repository.findAll();}
 }
