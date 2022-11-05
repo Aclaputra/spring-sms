@@ -10,4 +10,12 @@ To access the interface methods, the interface must be "implemented" (kinda like
  **/
 public interface StudentService {
   List<Student> getAllStudents();
+
+  Student saveStudent(Student student);
+
+  Student getStudentById(Long id);
+
+  Student updateStudent(Student student);
+
+  void deleteStudentById(Long id);
 }

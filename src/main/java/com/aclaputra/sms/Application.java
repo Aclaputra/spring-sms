@@ -18,6 +18,7 @@ public class Application {
 
   @PostConstruct
   public void initStudent() {
+    /*
     ArrayList<Student> student = new ArrayList<>();
 
     student.add(new Student("Acla", "Putra", "aclalead@gmail.com"));
@@ -25,6 +26,7 @@ public class Application {
     student.add(new Student("Alif", "Fahd Zaky", "alif@gmail.com"));
 
     studentRepository.saveAll(student);
+    */
   }
 
 	public static void main(String[] args) {
